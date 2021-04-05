@@ -21,6 +21,7 @@ public class HwSuBaseball {
 		int strike = 0;
 		int out = 0;
 		int count = 0;
+		int stack = 0;
 		Loop:
 		 while(true) {
 			
@@ -42,19 +43,29 @@ public class HwSuBaseball {
 					//Strike
 					else if(usr[i]==Can[i]) {
 						strike++;
+						System.out.println("Strike");
 						continue;
 					}
 					//Ball
 					else if(usr[i] == Can[j]) {
 						ball++;
+						System.out.println("Ball");
 						continue;
 					}
+					
+					
+					
 				}
+				
 			}
-			count ++;
-			if(count == 9) break;
-			if(out == 3) break;
 			
+			stack = 3-(ball+strike);
+			
+			out = stack + out;
+			count ++;
+			if(count == 9) break Loop;
+			System.out.println(strike+"스트라이크"+ball+"볼"+out+"아웃");
+			if(out == 3) break Loop;
 			
 		}
 
