@@ -12,12 +12,11 @@ public class Ex02 {
 		for (int i = 0; i < c1.length; i++) {
 			System.out.println(c1[i]);
 		//선언+생성+데이터 저장
-			
-	
 		}
 		String[] msg = {"java","jsp","android"};
 		for (int i = 0; i < msg.length; i++) {
 			System.out.println(msg[i]);
 		}
+		
 	}
 }

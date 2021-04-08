@@ -2,6 +2,7 @@ package com.ict01.garmmar03;
 //D = A(boolean 자료형) ? B : C;
 //D : 저장할 변수 A : 조건식 ? : 참일 때 실행할 문장 C : 거짓일때 실행할 문장
 //D, B, C의 자료형을 맞추어야 한다.
+//if 문의 고오급편
 class Ex04{
 	public static void main(String[] args){
 		int result = true ? 14 : 10;

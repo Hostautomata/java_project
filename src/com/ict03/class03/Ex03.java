@@ -32,7 +32,4 @@ public class Ex03 extends Ex02{
 	public void eat() {
 		System.out.println("아침식사는 거른다.");
 	}
-	
-	
-
 }

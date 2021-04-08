@@ -33,6 +33,8 @@ public class Ex05 {
 			
 			
 		}
+		System.out.println("이 름\t총 점\t평 균\t학 점\t순 위");
+		
 		for(int i = 0; i < sum.length; i++) {
 			for(int j = 0; j < name.length; j++) {
 				if(i==j) continue;
@@ -40,13 +42,13 @@ public class Ex05 {
 					rank[i]++;
 				}
 			
-			}
-		System.out.println("이 름\t총 점\t평 균\t학 점\t순 위");	
+			}	
 		System.out.print(name[i]+"\t");
 		System.out.print(sum[i]+"\t");
 		System.out.print(avg[i]+"\t");
 		System.out.print(hack[i]+"\t");
 		System.out.print(rank[i]+"\t");
+		System.out.println();
 		}
 		
 	}

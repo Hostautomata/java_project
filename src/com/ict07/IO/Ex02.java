@@ -1,6 +1,7 @@
 package com.ict07.IO;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 
 public class Ex02 {
 	public static void main(String[] args) {
@@ -10,6 +11,8 @@ public class Ex02 {
 		
 		//원래는 운영체제와 상관없이 사용하는게 맞음.
 		String pathname_3 = "C:"+File.separator+"study"+File.separator+"util";
+		//날짜 형식 지정하기
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-hh-mm");
 		
 		File file = new File(pathname_3);
 		String[] arr = file.list();
@@ -23,11 +26,17 @@ public class Ex02 {
 //			System.out.println();
 //			System.out.println(file2);
 //			System.out.println("///////////////////////////////////");
+			
+			
+			
 			if(file2.isDirectory()) {
 				System.out.println("디렉토리 :" +file2);
 			}else {
-				System.out.println("파일 :" +file2);
+				System.out.println("파일 :" +file2+"\n크기: "+(int)(file2.length()/1024)+"KB");	
 			}
+			
+			System.out.println("수정한 날짜 : "+sdf.format(file2.lastModified()));
+			System.out.println();
 		}
 		
 	}

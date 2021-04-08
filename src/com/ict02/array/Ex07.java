@@ -20,6 +20,7 @@ public class Ex07 {
 		
 		System.out.println("k1: "+k1);
 		
+		
 		System.out.println("k1[0]: "+k1[0]);
 		
 		System.out.println("k1[1]: "+k1[1]);

@@ -1,5 +1,6 @@
 package com.ict02.array;
 
+import java.util.Iterator;
 
 public class Ex09 {
 	public static void main(String[] args) {
@@ -11,12 +12,13 @@ public class Ex09 {
 		int[] person04 = {4,300,100,'A',1};
 		int[] person05 = {5,285,95,'A',1};
 		
+		
 		persons[0] = person01;
 		persons[1] = person02;
 		persons[2] = person03;
 		persons[3] = person04;
 		persons[4] = person05;
-		
+		//Rank
 		for(int i = 0;i < persons.length; i++) {
 			for(int j = 0; j < persons.length; j++) {
 				

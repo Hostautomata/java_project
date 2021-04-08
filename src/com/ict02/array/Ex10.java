@@ -8,7 +8,6 @@ public class Ex10 {
 		//번호 국영수점수를 입력받아서
 		//번호 총점 평균 학점 순위를 구하고 정렬하자.
 		int[][] arr = new int[5][5];
-		int[] person = new int[5];
 		for(int i = 0;i <arr.length; i++ ) {
 			System.out.println("번호 : ");
 			int no = sc.nextInt();
